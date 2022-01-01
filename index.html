@@ -11,10 +11,49 @@
 <head>
 <meta charset="UTF-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
-<title>Untitled-1</title>
+<title>Arcaea Random</title>
 <!-- write your code here -->
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="arcran.js"></script>
+<script src="Arcaea_Random.js"></script>
+<script>
+// Global Scripts
+	var allsong = ["Sayonara Hatsukoi", "Fairytale", "Vexaria", "Rise", "Lucifer", "Snow White", "Shades of Light in a Transcendent Realm", "Babaroque", "Lost Civilization", "GOODTEK (Arcaea Edit)", "qualia -ideaesthesia-", "Dement ~after legend~", "Dandelion", "Infinity Heaven", "Anökumene", "Brand new world", "Chronostasis", "Kanagawa Cyber Culvert", "Clotho and the stargazer", "Ignotus", "Harutopia ~Utopia of Spring~", "Rabbit in the Black Room", "One Last Drive", "Dreamin' Attraction!!", "Red and Blue", "Reinvent", "Syro", "Blaster", "Cybernecia Catharsis", "inkar-usi", "Suomi", "Bookmaker (2D Version)", "Illegal Paradise", "Nhelv", "LunarOrbit -believe in the Espebranch road-", "Purgatorium", "Rugie", "Grimheart", "ReviXy", "SUPERNOVA", "VECTOЯ", "Diode", "FREEF4LL", "Monochrome Princess", "Senkyou", "world.execute(me);", "Oblivia", "DataErr0r", "CROSS†SOUL", "Your voice so... feat. Such", "Impure Bird", "Auxesia", "Modelista", "Surrender", "Yosakura Fubuki", "Metallic Punisher", "carmine:scythe", "γuarδina", "Be There", "Call My Name feat. Yukacco", "dropdead", "Fallensquare", "Alexandrite", "Astral tale", "Phantasia", "Empire of Winter", "Libertas", "Dot to Dot feat. shully", "Dreadnought", "Mirzam", "Heavenly caress", "Filament", "Avant Raze", "BATTLE NO.1", "La'qryma of the Wasteland", "Einherjar Joker", "IZANA", "SAIKYO STRONGER", "amygdata", "Altale", "Scarlet Cage", "Feels So Right feat. Renko", "Teriqma", "MAHOROBA", "BADTEK", "Malicious Mischance", "BUCHiGiRE Berserker", "Galaxy Friends", "Xeraphinite", "Xanatos", "AttraqtiA", "GIMME DA BLOOD", "Can I Friend You on Bassbook? Lol", "THE ULTIMACY", "REKKA RESONANCE", "Sheriruth (Laur Remix)", "Evening in Scarlet", "lastendconductor", "goldenslaughterer", "Redolent Shape", "Summer Fireworks of Love", "Vivid Theory", "1F√", "Gekka (Short Version)", "Give Me a Nightmare", "Black Lotus", "Faint Light", "CROSS†OVER", "Lapis", "Purple Verse", "Glow", "enchanted love", "Bamboo", "Life is PIANO", "Vandalism", "Turbocharger", "False Embellishment", "HIVEMIND", "blue comet", "ENERGY SYNERGY MATRIX", "G e n g a o z o", "cry of viyella", "I've heard it said", "Lumia", "memoryfactory.lzh", "Relentless", "Solitary Dream", "Essence of Twilight", "PRAGMATISM", "Sheriruth", "Iconoclast", "SOUNDWiTCH", "trappola bewitching", "conflict", "Axium Crisis", "Grievous Lady", "Maze No.9", "The Message", "Sulfur", "Halcyon", "Ether Strike", "Fracture Ray", "Particle Arts", "Vindication", "Heavensdoor", "Ringed Genesis", "BLRINK", "Equilibrium", "Antagonism", "#1f1e33", "Lost Desire", "Dantalion", "Tempestissimo", "Arcahv", "Paradise", "Flashback", "Flyburg and Endroll", "Party Vinyl", "Nirv lucE", "GLORY：ROAD", "Blossoms", "Romance Wars", "Moonheart", "Genesis", "Lethaeus", "corps-sans-organes", "next to you", "Silent Rush", "Strongholds", "Memory Forest", "Singularity", "Cosmica", "Ascent", "Live Fast Die Young", "Antithese", "Corruption", "Black Territory", "Vicious Heroism", "Cyaegha", "Chelsea", "AI[UE]OON", "A Wandering Melody of Love", "Tie me down gently", "Valhalla:0", "Eccentric Tale", "Alice à la mode", "Alice's Suitcase", "Jump", "Felis", "Beside You", "Heart Jackin'", "To: Alice Liddell", "Paper Witch", "Crystal Gravity", "Far Away Light", "Löschen", "Seclusion", "Aegleseeker", "Coastal Highway", "ΟΔΥΣΣΕΙΑ", "Overwhelm", "Small Cloud Sugar Candy", "AlterAle", "Divine Light of Myriad", "First Snow", "Blocked Library", "Blue Rose", "nέo κósmo", "Lightning Screw", "Moonlight of Sand Castle", "REconstruction", "Evoltex (poppi'n mix)", "Oracle", "αterlßus", "Dream goes on", "Journey", "Specta", "Quon (Lanota)", "cyanine", "Hikari", "Hall of Mirrors", "STAGER (ALL STAGE CLEAR)", "Linear Accelerator", "Tiferet", "MERLIN", "OMAKENO Stroke", "DX Choseinou Full Metal Shojo", "Got hive of Ra", "Scarlet Lance", "ouroboros -twin stroke of the end-", "Garakuta Doll Play", "Ikazuchi", "World Vanquisher", "Climax", "Last Celebration", "Misdeed -la bonte de Dieu et lorigine du mal-", "Lazy Addiction", "Dazzle hop", "Viyella's Tears", "ω4", "April showers", "7thSense", "Oshama Scramble!", "AMAZING MIGHTYYYY!!!!", "Quon (WACCA!)", "Let you DIVE! (nitro rmx)", "with U", "Mazy Metroplex", "GENOCIDER", "Lights of Muse", "Final Step!", "Haze of Autumm", "Medusa", ];
+var lv8 = ["Lights of Muse","Vexaria (BYD)","1F√","Antithese","April showers","Babaroque","Beside You","Blue comet","Bookmaker (2D Version)","Call My Name feat. Yukacco","Chelsea","Coastal Highway","cry of viyella","Dandelion","Diode","Dot to Dot feat. shully","dropdead","Eccentric Tale","Evoltex (poppi'n mix)","Flashback","FREEF4LL","Gekka (Short Version)","Genesis","Grimheart","Hall of Mirrors","Harutopia ~Utopia of Spring~","Hikari","I've heard it said","Journey","Lucifer","Lumia","Maze No.9","memoryfactory.lzh","MERLIN","Moonheart","next to you","Oblivia","One Last Drive","Quon (DJ Noriken)","Paper Witch","Particle Arts","Purgatorium","Rabbit In The Black Room","REconstruction","Reinvent","Relentless","Senkyou","Shades of Light in a Transcendent Realm","Silent Rush","Snow White","Solitary Dream","Surrender","Tie me down gently","Turbocharger","Vivid Theory","world.execute(me);",];
+var lv9 = ["Antithese (BYD)","Fairytale (BYD)","Infinity Heaven (BYD)","Lumia (BYD)","next to you (BYD)","Purgatorium (BYD)","AI[UE]OON","Alice à la mode","Alice's Suitcase","amygdata","Anökumene","Astral tale","Auxesia","Avant Raze","Be There","Blaster","Can I Friend You on Bassbook Lol","carmine:scythe","Chronostasis","CROSS†OVER","CROSS†SOUL","Crystal Gravity","Cybernecia Catharsis","DataErr0r","Dreamin' Attraction!!","Empire of Winter","Equilibrium","Essence of Twilight","Evening in Scarlet","Faint Light (Arcaea Edit)","Fallensquare","Feels So Right feat. Renko","Flyburg and Endroll","Give Me a Nightmare","Glow","GOODTEK (Arcaea Edit)","Iconoclast","Ignotus","Illegal Paradise","Impure Bird","Jump","Kanagawa Cyber Culvert","La'qryma of the Wasteland","Lapis","Lazy Addiction","Let you DIVE! (nitro rmx)","Libertas","Life is PIANO","Lost Civilization","LunarOrbit -believe in the Espebranch road-","MAHOROBA","Monochrome Princess","OMAKENO Stroke","Oracle","Party Vinyl","Phantasia","Purple Verse","qualia -ideaesthesia-","Red and Blue","ReviXy","Rugie","Specta","STAGER (ALL STAGE CLEAR)","Strongholds","Syro","Teriqma","VECTOЯ","Vindication","Yosakura Fubuki","Your voice so... feat. Such","With U","ΟΔΥΣΣΕΙΑ","#1f1e33 (PRS)","dropdead (PRS)","Fracture Ray (PRS)","Grievous Lady (PRS)","SAIKYO STRONGER (PRS)","Tempestissimo (PRS)","Final Step!",];
+var lv9u = ["Dement ~after legend~ (BYD)","GOODTEK (Arcaea Edit) (BYD)","Kanagawa Cyber Culvert (BYD)","La'qryma of the Wasteland (BYD)","Lost Civilization (BYD)","Moonheart (BYD)","qualia -ideaesthesia- (BYD)","7thSense","A Wandering Melody of Love","Altale","Antagonism","Arcahv","BADTEK","Bamboo","BATTLE NO.1","Black Lotus","Black Territory","BLRINK","Corruption","Dazzle hop","Dreadnought","DX Choseinou Full Metal Shojo","Einherjar Joker","Far Away Light","Filament","Galaxy Friends","Got hive of Ra","Heart Jackin'","Heavenly caress","Heavensdoor","Lethaeus","Linear Accelerator","Lost Desire","Mazy Metroplex","Memory Forest","Nhelv","Quon (Lanota)","Scarlet Cage","SOUNDWiTCH","Sulfur","SUPERNOVA","The Message","THE ULTIMACY","Vandalism","Xeraphinite","Haze of Autumm",];
+var lv10 = ["Bookmaker (2D Version) (BYD)","Quon (Wacca/BYD)","Alexandrite","AttraqtiA","Climax","conflict","corps-sans-organes","cyanine","Ether Strike","Felis","Garakuta Doll Play","GIMME DA BLOOD","GLORY : ROAD","Ikazuchi","IZANA","Last Celebration","Löschen","Malicious Mischance","Metallic Punisher","Mirzam","Modelista","Nirv lucE","Oshama Scramble!","Overwhelm","PRAGMATISM","Scarlet Lance","Seclusion","Sheriruth","Sheriruth (Laur Remix)","Tempestissimo","Tiferet","To: Alice Liddell","trappola bewitching","Valhalla:0","Vicious Heroism","Viyella's Tears","Xanatos","aterlβus","γuarδina","Medusa",];
+var lv10u = ["Heavensdoor (BYD)","#1f1e33","AMAZING MIGHTYYYY!!!!","Axium Crisis","BUCHiGiRE Berserker","Cyaegha","Dantalion","Divine Light of Myriad","GENOCIDER","Halcyon","Misdeed -la bonté de Dieu et l'origine du mal-","ouroboros -twin stroke of the end-","REKKA RESONANCE","Ringed Genesis","Singularity","World Vanquisher","ω4",];
+var lv11 = ["PRAGMATISM -RESURRECTION- (BYD)","Tempestissimo (BYD)","Aegleseeker","Fracture Ray","Grievous Lady","SAIKYO STRONGER",];
+var songcount = allsong.length; //Number of songs 
+var lv8count = lv8.length;
+var lv9count = lv9.length;
+var lv9ucount = lv9u.length;
+var lv10count = lv10.length;
+var lv10ucount = lv10u.length;
+var lv11count = lv11.length;
+var modeselect = 0;
+var allActivate = 1;
+var ranall = Math.floor((Math.random() * songcount));
+var customLvMin=1;
+var customLvMax=6;
+/*
+1=8
+2=9
+3=9+
+4=10
+5=10+
+6=11
+*/
+var customLvfst=1;
+var customLvsnd=1;
+var customLvtrd=1;
+var customLvfth=1;
+var rancourse=0;
+var getst = "a";
+var getnd = "b";
+var getrd = "c";
+var getth = "d";
+var removedup = 1;</script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -23,13 +62,26 @@ function init() {
 	dom_overlay_container = document.getElementById("dom_overlay_container");
 	var comp=AdobeAn.getComposition("C36A1DB1A5C9D3489D1B58D56750E1D5");
 	var lib=comp.getLibrary();
-	handleComplete({},comp);
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+	var lib=comp.getLibrary();
+	loader.loadManifest(lib.properties.manifest);
+}
+function handleFileLoad(evt, comp) {
+	var images=comp.getImages();	
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
 }
 function handleComplete(evt,comp) {
 	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
 	var lib=comp.getLibrary();
 	var ss=comp.getSpriteSheet();
-	exportRoot = new lib.Untitled1();
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.arcran();
 	stage = new lib.Stage(canvas);
 	stage.enableMouseOver();	
 	//Registers the "tick" event listener.
@@ -47,8 +99,8 @@ function handleComplete(evt,comp) {
 <!-- write your code here -->
 </head>
 <body onload="init();" style="margin:0px;">
-	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:960px; height:640px">
-		<canvas id="canvas" width="960" height="640" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+	<div id="animation_container" style="background-color:rgba(204, 204, 204, 1.00); width:960px; height:640px">
+		<canvas id="canvas" width="960" height="640" style="position: absolute; display: block; background-color:rgba(204, 204, 204, 1.00);"></canvas>
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:960px; height:640px; position: absolute; left: 0px; top: 0px; display: block;">
 		</div>
 	</div>
